@@ -1,0 +1,18 @@
+{
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascript",
+    "javascriptreact": "javascriptreact",
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact",
+    "css": "css",
+    "scss": "scss",
+    "html": "html"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false
+}
