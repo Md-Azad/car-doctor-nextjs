@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import dbConnect from "@/lib/dbConnect";
 import { ObjectId } from "mongodb";
 import React from "react";
@@ -10,7 +11,7 @@ const ServiceDetailsPage = async ({ params }) => {
 
   return (
     <div>
-      <h1>service details page. </h1>
+      <Banner />
     </div>
   );
 };
