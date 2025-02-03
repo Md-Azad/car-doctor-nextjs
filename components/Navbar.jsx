@@ -63,6 +63,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navbarLinks()}</ul>
       </div>
       <div className="navbar-end">
+        <Link href={"/register"}>
+          <button className="btn btn-outline mr-2">Register</button>
+        </Link>
         <a className="btn btn-outline">Apointment</a>
       </div>
     </div>

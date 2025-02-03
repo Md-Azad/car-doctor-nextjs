@@ -3,7 +3,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div className="main-layout flex justify-center  ">
-      <figure className=" w-11/12  relative overlay-bg">
+      <figure className=" w-full relative overlay-bg ">
         <Image
           src={"/assets/images/checkout/checkout.png"}
           width={1000}

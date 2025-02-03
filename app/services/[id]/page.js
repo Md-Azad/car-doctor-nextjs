@@ -12,6 +12,9 @@ const ServiceDetailsPage = async ({ params }) => {
   return (
     <div>
       <Banner />
+      <section>
+        <h1>{data.title}</h1>
+      </section>
     </div>
   );
 };
