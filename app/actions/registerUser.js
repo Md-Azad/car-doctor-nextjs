@@ -1,4 +1,6 @@
 "use server";
+
+import bcrypt from "bcrypt";
 import dbConnect from "@/lib/dbConnect";
 
 export async function registerUser(payload) {
@@ -12,6 +14,9 @@ export async function registerUser(payload) {
   if (isExist) {
     return { success: "false", message: "user allready exist" };
   }
+  const hashedPassword = await bcrypt.hash(password, 10);
+
+  payload.password = hashedPassword;
 
   const result = await userCollection.insertOne(payload);
   const { acknowledged, insertedId } = result;

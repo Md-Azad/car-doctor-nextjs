@@ -12,6 +12,7 @@ const RegisterForm = () => {
     const password = form.password.value;
     await registerUser({ name, email, password });
   };
+
   return (
     <form
       onSubmit={handleSubmit}
